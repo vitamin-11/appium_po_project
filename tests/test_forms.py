@@ -11,7 +11,7 @@ from pages.forms_page import FormsPage
 @allure.severity(allure.severity_level.NORMAL)
 def test_fill_input(driver):
 
-    #driver.find_element(AppiumBy.ACCESSIBILITY_ID, "Forms").click()
+    driver.find_element(AppiumBy.ACCESSIBILITY_ID, "Forms").click()
 
     with allure.step("填写输入框并验证内容"):
         forms = FormsPage(driver)
